@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_todo_task" model="ir.actions.act_window">
+        <field name="name">To-Do Tasks</field>
+        <field name="res_model">todo.task</field>
+        <field name="view_mode">list,form,kanban</field>
+    </record>
+
+    <record id="action_todo_category" model="ir.actions.act_window">
+        <field name="name">Task Categories</field>
+        <field name="res_model">todo.category</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="todo_category_list_view" model="ir.ui.view">
+        <field name="name">todo.category.list</field>
+        <field name="model">todo.category</field>
+        <field name="arch" type="xml">
+            <list string="Task Categories">
+                <field name="name"/>
+                <field name="description"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="todo_category_form_view" model="ir.ui.view">
+        <field name="name">todo.category.form</field>
+        <field name="model">todo.category</field>
+        <field name="arch" type="xml">
+            <form string="Task Category">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="menu_todo_root" name="SICS To-Do" sequence="10"/>
+    <menuitem id="menu_todo_task" name="Tasks" parent="menu_todo_root" action="action_todo_task" sequence="10"/>
+    <menuitem id="menu_todo_category" name="Categories" parent="menu_todo_root" action="action_todo_category" sequence="20"/>
+</odoo>
