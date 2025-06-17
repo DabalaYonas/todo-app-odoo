@@ -1,7 +1,7 @@
 Advanced To-Do Application for Odoo 18
 The Advanced To-Do Application is a custom Odoo module designed to manage tasks with advanced features such as prioritization, categories, due dates, and a Kanban dashboard. Built for Odoo 18, this app provides a user-friendly interface for task management, complete with progress tracking, state transitions, and chatter integration for communication.
 
-![Advanced To-Do App Interface](static/description/screenshot.png)
+![Advanced To-Do App Interface](static/description/screenshot.PNG)
 
 *A screenshot showing the list view of tasks with state columns and progress bars*
 
