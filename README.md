@@ -76,6 +76,10 @@ The **Advanced To-Do Application** is a custom Odoo module designed to manage ta
 6. **Install the Module**:
    - In the **Apps** menu, search for SICS To-Do and click **Activate**.
 
+    ![SICS To-Do App In Apps](static/description/screenshot-apps.PNG)
+
+    *A screenshot showing SICS To-Do app in apps*
+
 7. **Clear Cache (Optional)**:
    - Clear your browser cache or use an incognito window.
    - Restart Odoo with `--no-http-cache` to clear server-side cache:
